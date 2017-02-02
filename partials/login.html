@@ -1,0 +1,25 @@
+<div class="col-md-6" ng-controller="LoginCtrl">
+  <h1>Login</h1><br>
+  <hr>
+  <label for="user">Email:</label><br>
+  <input type="email" ng-model="email"><br>
+  <label for="email">Email:</label><br>
+  <input type="text" ng-model="password"><br><br>
+  <button class="btn btn-success" ng-click="login()">Login</button>
+  <button class="btn btn-warning" ng-click="logout()">Logout</button>
+</div>
+<div class="col-md-6">
+  <h3>Registration</h3><br>
+  <button class="btn btn-danger" ng-click="getUserId()">UID</button>
+  <div>
+    <label for="firstName">First Name</label><br>
+    <input type="text" id="firstName" ng-model="firstName"><br>
+    <label for="lastName">Last Name</label><br>
+    <input type="text" id="lastName" ng-model="lastName"><br>
+    <label for="email">Email</label><br>
+    <input type="text" id="email" ng-model="email"><br>
+    <label for="password">Password</label><br>
+    <input type="text" id="password" ng-model="password"><br><br><br>
+    <input type="submit" ng-click="create()" class="btn btn-success">
+  </div>
+</div>
